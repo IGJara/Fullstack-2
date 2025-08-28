@@ -95,3 +95,72 @@ body {
     text-align: center;
   }
 }
+
+/* ====== Botón de Música ====== */
+
+/* ===== Modal música ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.modal {
+  width: 100%;
+  max-width: 520px;
+  background: #17171b;
+  color: #e9eef2;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+  text-align: center;
+}
+
+.modal h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+
+.modal p {
+  margin: 0 0 16px 0;
+  color: #cfd9e1;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.btn-secondary {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: transparent;
+  color: #e9eef2;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.modal-note {
+  display: block;
+  color: #aab6c2;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
