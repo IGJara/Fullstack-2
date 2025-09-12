@@ -10,6 +10,7 @@ document.addEventListener("change", (e)=>{
     }
 })
 
+
 document.addEventListener("click",(e)=>{
     if(e.target === $submit){
         if($password.value !== "" && $username.vale !== ""){
